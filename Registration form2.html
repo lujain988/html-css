@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <h3>Registration Form</h3>
+    <div style="margin: 0 0 0 350px">
+      <div>
+        <form>
+          <fieldset
+            style="
+              border: 1px solid black;
+              width: 350px;
+              padding: 22px;
+              background-color: rgb(254, 255, 213);
+              text-align: center;
+            "
+          >
+            <legend>Personal details</legend>
+            <label for="fname">First name: </label>
+            <input type="text" name="fname" id="fname" autofocus />
+            <br />
+            <br />
+            <label for="lname">Last name </label>
+            <input type="text" name="Lname" id="lname" />
+            <br />
+            <br />
+            <label for="email">Email addres</label>
+            <input type="email" name="email" id="email" />
+            <br />
+            <br />
+
+            <label for="Gender">Gender: </label>
+            <input type="radio" name="Gender" id="Male" value="Male" />
+            <label for="Male">Male</label>
+            <input type="radio" name="Gender" id="Female" value="Female" />
+            <label for="Female">Female</label>
+          </fieldset>
+          <br />
+        </form>
+      </div>
+
+      <br />
+
+      <div>
+        <fieldset
+          style="
+            border: 1px solid black;
+            padding: 22px;
+            width: 350px;
+            text-align: center;
+            background-color: rgb(253, 255, 213);
+          "
+        >
+          <legend align="left">City</legend>
+          <form>
+            <label for="City">City </label>
+            <select name="City" id="City">
+              <option value="1">Amman</option>
+              <option value="2">Zarqa</option>
+              <option value="3" selected>Irbid</option>
+              <option value="4">Aqaba</option>
+              <option value="5">Madaba</option>
+              <option value="6">Salt</option>
+              <option value="7">Jerash</option>
+              <option value="8">Ma'an</option>
+              <option value="9">Karak</option>
+              <option value="10">Tafilah</option>
+              <option value="11">Mafraq</option>
+              <option value="12">Ajloan</option>
+            </select>
+          </form>
+        </fieldset>
+      </div>
+      <br />
+      <br />
+
+      <div style="margin: 0 0 0 150px">
+        <form><input type="submit" name="sign" value="Subscribe" /></form>
+      </div>
+    </div>
+  </body>
+</html>

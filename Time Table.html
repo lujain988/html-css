@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task #3</title>
+    <style>
+      table {
+        border: 2px groove black;
+        border-collapse: collapse;
+      }
+      th,
+      tr,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        text-align: center;
+        padding: 7px;
+      }
+
+      th {
+        position: relative;
+        padding-top: 20px;
+      }
+      tr th::before {
+        content: attr(data-roman);
+        font-family: "Times New Roman", Times, serif;
+        text-align: center;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <caption>
+          <h1>Time Table</h1>
+        </caption>
+        <tr style="font-size: 13px">
+          <th>Day/Period</th>
+          <th data-roman="I">9:30-10:20</th>
+          <th data-roman="II">10:20-11:10</th>
+          <th data-roman="III">11:10-12:00</th>
+          <th>12:00-12:40</th>
+          <th data-roman="IV">12:40-1:30</th>
+          <th data-roman="V">1:30-2:20</th>
+          <th data-roman="VI">2:20-3:10</th>
+          <th data-roman="VII">3:10-4:00</th>
+        </tr>
+        <tr>
+          <th>Monday</th>
+          <td>Eng</td>
+          <td>Mat</td>
+          <td>Che</td>
+          <td rowspan="6">
+            <b>
+              L <br />
+              U <br />
+              N <br />
+              C <br />
+              H
+            </b>
+          </td>
+          <td colspan="3">LAB</td>
+          <td>Phy</td>
+        </tr>
+        <tr>
+          <th>Tuesday</th>
+          <td colspan="3">LAB</td>
+          <td>Eng</td>
+          <td>Che</td>
+          <td>Mat</td>
+          <td>SPORTS</td>
+        </tr>
+        <tr>
+          <th>Wednesday</th>
+          <td>Mat</td>
+          <td>phy</td>
+          <td>Eng</td>
+          <td>Che</td>
+          <td colspan="3">LIBRARY</td>
+        </tr>
+        <tr>
+          <th>Thursday</th>
+          <td>Phy</td>
+          <td>Eng</td>
+          <td>Che</td>
+          <td colspan="3">LAB</td>
+          <td>Mat</td>
+        </tr>
+        <tr>
+          <th>Friday</th>
+          <td colspan="3">LAB</td>
+          <td>Mat</td>
+          <td>Che</td>
+          <td>Eng</td>
+          <td>Phy</td>
+        </tr>
+        <tr>
+          <th>Saturday</th>
+          <td>Eng</td>
+          <td>Che</td>
+          <td>Mat</td>
+          <td colspan="3">SEMINAR</td>
+          <td>SPORTS</td>
+        </tr>
+      </thead>
+    </table>
+  </body>
+</html>
